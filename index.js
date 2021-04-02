@@ -50,8 +50,7 @@ client.connect((err) => {
       console.log(result)
     })
   })
-//   client.close();
 });
 
 
-app.listen(port);
+app.listen(process.env.PORT || port);
